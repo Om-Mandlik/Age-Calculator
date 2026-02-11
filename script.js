@@ -17,20 +17,24 @@ function calculate(){
     Months = (tm - bm)
     years = (ty - by)
     
-
-    if(years = 0){
+   
+    if(years == 0){
         result.innerHTML = "please enter valid date";
     }
-
-    if (Dates < 0 ) {
+    else{
+        if (Dates < 0 ) {
         let ndays =  new Date(ty,(tm-1),0).getDate()
         Dates = (ndays+td) - bd
         tm = tm - 1
     }    
     if (Months < 0){
             Months = (tm + 12) - (bm)
-            years = (ty - 1) - (by)   
-        }
+            years = (ty - 1) - (by)  
+          
+    }
+    }
+
+
     result.innerHTML = `${years} Years ${Months} Months ${Dates}days`
 }
 
