@@ -5,8 +5,11 @@
 body{
     background: linear-gradient(to right, rgb(39, 145, 25),rgb(157, 255, 0),yellow);
 }
-h3{
-    align-content: center;
+label{
+    margin: 10px;
+    font-size: larger;
+    font: 800;
+    color: chocolate;
 }
 #date{
     padding: 20px 20px;
@@ -42,9 +45,10 @@ h3{
     background: linear-gradient(90deg,rgb(124, 0, 239),rgb(191, 16, 191),rgb(183, 36, 166),white);
 }
 p{
+    color: rgb(3, 22, 232);
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
-    font: bolder;
+    font: 900;
     
 }
 #result_box{
